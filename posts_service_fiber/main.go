@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
-	"database/database.go"
-	"routes"
+	"github.com/fnhernandorena/Social_Network_microservice/posts_service_fiber/database"
+	"github.com/fnhernandorena/Social_Network_microservice/posts_service_fiber/routes"
 
 	"github.com/gofiber/fiber/v2"
 )

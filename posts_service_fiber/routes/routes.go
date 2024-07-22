@@ -10,8 +10,8 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
-	"database"
-	"models"
+	"github.com/fnhernandorena/Social_Network_microservice/posts_service_fiber/database"
+	"github.com/fnhernandorena/Social_Network_microservice/posts_service_fiber/models"
 )
 
 func CreatePost(c *fiber.Ctx) error {
