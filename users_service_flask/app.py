@@ -1,11 +1,14 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
-from bson import ObjectId
+from bson import ObjectId   
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://nicocaponico55:nicocaponico55@cluster0.xcxigqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("MONGO_URI")
 db = client['microservices']
 users_collection = db['users']
 
